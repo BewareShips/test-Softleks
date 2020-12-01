@@ -31,6 +31,7 @@ function App() {
   const [showItem, setShowItem] = React.useState(false);
 
   return (
+    <div className={s.outerContainer}>
     <div className={s.container}>
       <div className={s.wrapper}>
         <div className={s.title}>
@@ -63,6 +64,7 @@ function App() {
       </div>
       <div className={s.carouselWrapper}>
         <Carousel />
+      </div>
       </div>
     </div>
   );

@@ -52,6 +52,7 @@
   .main {
     display: flex;
     flex-direction: column;
+    align-self: start;
     p {
       margin:0 auto;
       color: white;
@@ -105,9 +106,13 @@
     .titles {
       display: flex;
       flex-direction: column;
-      padding-right: 0;
+      align-self: start;
       &__sign {
+        font-size: 40px;
         transform: rotate(0deg);
+      }
+      span{
+        font-size: 50px;
       }
     }
   }
