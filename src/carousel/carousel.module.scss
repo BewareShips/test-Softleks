@@ -1,0 +1,124 @@
+.wrapper {
+  background: #005ef3;
+  min-width: 360px;
+  min-height: 640px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 70px;
+  }
+
+  .subTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.4px;
+    div {
+      margin-right: 10px;
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%;
+    }
+  }
+
+  .titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__sign {
+      transform: rotate(-90deg);
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+    span {
+      font-size: 28px;
+      line-height: 60px;
+      font-weight: 300;
+      padding-right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin:0 auto;
+      color: white;
+      font-size: 14px;
+      font-weight: 300;
+      font-family: "Rubik", sans-serif;
+      line-height: 24px;
+    }
+    &__button {
+      width: 265px;
+      display: inline-block;
+      border: 1px solid transparent;
+      text-decoration: none;
+      margin-top: 20px;
+      padding: 20px 0px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 500;
+      background: linear-gradient(#a79156, #e3d1a0);
+      color: white;
+    }
+  }
+}
+
+.button:active {
+  transition: 0.1 ease;
+  background: #b19b69;
+}
+
+.activeEl {
+  color: white;
+  font-size: 10px;
+}
+.usual {
+  color: #4c8ef7;
+}
+
+
+
+@media (min-width: 1440px) {
+  .wrapper {
+    .container {
+      flex-direction: row;
+    }
+    .main {
+      padding-left: 350px;
+      p{
+        font-size: 16px;
+      }
+    }
+    .titles {
+      display: flex;
+      flex-direction: column;
+      padding-right: 0;
+      &__sign {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .wrapper {
+    .container {
+      margin: 0 50px;
+    }
+  }
+}
+
+
